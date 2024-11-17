@@ -111,7 +111,7 @@ class SkinlibController extends Controller
         $uploader = $texture->owner;
         if ($uploader) {
             if ($uploader->isAdmin()) {
-                $badges[] = ['text' => 'STAFF', 'color' => 'primary'];
+                $badges[] = ['text' => '管理员', 'color' => 'primary'];
             }
 
             $badges = $filter->apply('user_badges', $badges, [$uploader]);

@@ -55,6 +55,7 @@ const cssViewer = css`
   canvas {
     display: flex;
     justify-content: center;
+	filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.3));
   }
 `
 
@@ -88,7 +89,7 @@ const Viewer: React.FC<Props> = (props) => {
       height: container.clientHeight,
       skin: props.skin || SkinSteve,
       cape: props.cape || undefined,
-      model: props.isAlex ? 'slim' : 'default',
+      model: !props.skin || props.isAlex ? 'slim' : 'default',
       zoom: initPositionZ / 100,
     })
     viewer.autoRotate = true
@@ -113,7 +114,7 @@ const Viewer: React.FC<Props> = (props) => {
   useEffect(() => {
     const viewer = viewRef.current
     viewer.loadSkin(props.skin || SkinSteve, {
-      model: props.isAlex ? 'slim' : 'default',
+      model: !props.skin || props.isAlex ? 'slim' : 'default',
     })
   }, [props.skin, props.isAlex])
 

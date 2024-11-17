@@ -34,7 +34,7 @@ class UserPanelComposer
 
         $badges = [];
         if ($user->isAdmin()) {
-            $badges[] = ['text' => 'STAFF', 'color' => 'primary'];
+            $badges[] = ['text' => '管理员', 'color' => 'primary'];
         }
         $this->dispatcher->dispatch(new \App\Events\RenderingBadges($badges));
         $badges = $this->filter->apply('user_badges', $badges, [$user]);
