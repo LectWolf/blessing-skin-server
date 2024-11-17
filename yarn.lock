@@ -583,10 +583,10 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.5.1.tgz#55cc8410abf1003b726324661ce5b0d1c10de258"
   integrity sha512-CNy5vSwN3fsUStPRLX7fUYojyuzoEMSXPl7zSLJ8TgtRfjv24LOnOWKT2zYwaHZCJGkdyRnTmstR0P+Ah503Gw==
 
-"@gplane/tsconfig@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.npmmirror.com/@gplane/tsconfig/-/tsconfig-6.2.0.tgz#7ce4ac25f5474f5271efd8b0cc59e387d5bc533f"
-  integrity sha512-kQzcIih2UY5q+YRqeBvOsueszencKROvrhLEI6OehsNqaCc1XkGpJLFjlPHWoOC4mycx8YWu/9+jMGJDlOCjGA==
+"@gplane/tsconfig@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.npmmirror.com/@gplane/tsconfig/-/tsconfig-4.2.0.tgz#3c8aa44bf58a40451e27228d137036e253e46e08"
+  integrity sha512-1R3mqDqi+GiYD/4P3aC4hIzdrRHfEvxsek6ZM8zQ87NBUsRe/+cV7GwG8L+4xsfssheKk/EuWud9cF8mFpvfMQ==
 
 "@hot-loader/react-dom@^17.0.0":
   version "17.0.2"
